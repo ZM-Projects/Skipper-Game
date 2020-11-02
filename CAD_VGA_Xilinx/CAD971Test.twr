@@ -1,0 +1,221 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml CAD971Test.twx CAD971Test.ncd -o CAD971Test.twr
+CAD971Test.pcf -ucf vga.ucf
+
+Design file:              CAD971Test.ncd
+Physical constraint file: CAD971Test.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLOCK_24
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+Key<0>      |    6.773(R)|      SLOW  |   -0.238(R)|      SLOW  |CLOCK_24_BUFGP    |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLOCK_24 to Pad
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+                |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination     |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+Leds<0>         |        10.712(R)|      SLOW  |         4.677(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+Leds<1>         |        10.778(R)|      SLOW  |         4.691(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+Leds<2>         |        10.179(R)|      SLOW  |         4.252(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+Leds<3>         |        10.285(R)|      SLOW  |         4.284(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+Leds<4>         |        10.019(R)|      SLOW  |         4.168(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+Leds<5>         |        10.154(R)|      SLOW  |         4.239(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+Leds<6>         |        10.525(R)|      SLOW  |         4.442(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+Leds<7>         |        10.653(R)|      SLOW  |         4.506(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_B<0>        |        22.086(R)|      SLOW  |         4.599(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_B<1>        |        22.288(R)|      SLOW  |         4.379(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_G<0>        |        22.933(R)|      SLOW  |         4.514(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_G<1>        |        22.905(R)|      SLOW  |         4.900(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_HS          |        10.142(R)|      SLOW  |         4.009(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_R<0>        |        24.417(R)|      SLOW  |         4.552(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_R<1>        |        23.867(R)|      SLOW  |         4.260(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_VS          |        11.148(R)|      SLOW  |         3.947(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+outseg<0>       |         9.057(R)|      SLOW  |         3.705(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+outseg<1>       |         9.067(R)|      SLOW  |         3.715(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+outseg<2>       |         9.324(R)|      SLOW  |         3.870(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+outseg<3>       |         9.187(R)|      SLOW  |         3.746(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+sevensegments<0>|        11.969(R)|      SLOW  |         4.266(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+sevensegments<1>|        11.886(R)|      SLOW  |         4.625(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+sevensegments<2>|        12.221(R)|      SLOW  |         4.497(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+sevensegments<3>|        12.762(R)|      SLOW  |         4.457(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+sevensegments<4>|        13.400(R)|      SLOW  |         4.546(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+sevensegments<5>|        11.484(R)|      SLOW  |         4.429(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+sevensegments<6>|        11.312(R)|      SLOW  |         4.026(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock RESET_N to Pad
+----------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+                |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                      | Clock  |
+Destination     |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                     | Phase  |
+----------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+VGA_B<0>        |        21.759(F)|      SLOW  |        10.719(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[0]_AND_165_o |   0.000|
+                |        19.911(F)|      SLOW  |         9.443(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[1]_AND_163_o |   0.000|
+                |        19.264(F)|      SLOW  |         8.953(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[24]_AND_117_o|   0.000|
+                |        21.034(F)|      SLOW  |        10.310(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[25]_AND_115_o|   0.000|
+                |        20.376(F)|      SLOW  |         9.147(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[26]_AND_113_o|   0.000|
+                |        20.671(F)|      SLOW  |         9.404(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[27]_AND_111_o|   0.000|
+                |        21.515(F)|      SLOW  |        10.205(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[28]_AND_109_o|   0.000|
+                |        21.454(F)|      SLOW  |         9.441(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[29]_AND_107_o|   0.000|
+                |        21.002(F)|      SLOW  |         9.856(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[2]_AND_161_o |   0.000|
+                |        21.447(F)|      SLOW  |         9.817(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[30]_AND_105_o|   0.000|
+                |        20.242(F)|      SLOW  |         9.746(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[31]_AND_185_o|   0.000|
+                |        21.125(F)|      SLOW  |         9.429(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[3]_AND_159_o |   0.000|
+                |        20.850(F)|      SLOW  |         9.542(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[4]_AND_157_o |   0.000|
+                |        21.033(F)|      SLOW  |         9.638(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[5]_AND_155_o |   0.000|
+                |        21.289(F)|      SLOW  |         9.673(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[6]_AND_153_o |   0.000|
+                |        21.407(F)|      SLOW  |         9.724(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[7]_AND_151_o |   0.000|
+                |        20.399(R)|      SLOW  |         5.307(R)|      FAST  |RESET_N_IBUF_BUFG                     |   0.000|
+VGA_B<1>        |        21.242(R)|      SLOW  |         5.582(R)|      FAST  |RESET_N_IBUF_BUFG                     |   0.000|
+                |        21.806(F)|      SLOW  |        10.930(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[0]_AND_165_o |   0.000|
+                |        19.958(F)|      SLOW  |         9.654(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[1]_AND_163_o |   0.000|
+                |        19.311(F)|      SLOW  |         9.164(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[24]_AND_117_o|   0.000|
+                |        21.081(F)|      SLOW  |        10.521(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[25]_AND_115_o|   0.000|
+                |        20.423(F)|      SLOW  |         9.358(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[26]_AND_113_o|   0.000|
+                |        20.718(F)|      SLOW  |         9.615(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[27]_AND_111_o|   0.000|
+                |        21.562(F)|      SLOW  |        10.416(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[28]_AND_109_o|   0.000|
+                |        21.501(F)|      SLOW  |         9.652(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[29]_AND_107_o|   0.000|
+                |        21.049(F)|      SLOW  |        10.067(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[2]_AND_161_o |   0.000|
+                |        21.494(F)|      SLOW  |        10.028(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[30]_AND_105_o|   0.000|
+                |        20.289(F)|      SLOW  |         9.957(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[31]_AND_185_o|   0.000|
+                |        21.172(F)|      SLOW  |         9.640(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[3]_AND_159_o |   0.000|
+                |        20.897(F)|      SLOW  |         9.753(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[4]_AND_157_o |   0.000|
+                |        21.080(F)|      SLOW  |         9.849(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[5]_AND_155_o |   0.000|
+                |        21.336(F)|      SLOW  |         9.884(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[6]_AND_153_o |   0.000|
+                |        21.454(F)|      SLOW  |         9.935(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[7]_AND_151_o |   0.000|
+VGA_G<0>        |        21.564(R)|      SLOW  |         5.520(R)|      FAST  |RESET_N_IBUF_BUFG                     |   0.000|
+                |        20.989(F)|      SLOW  |        10.489(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[0]_AND_165_o |   0.000|
+                |        19.141(F)|      SLOW  |         9.213(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[1]_AND_163_o |   0.000|
+                |        19.218(F)|      SLOW  |         9.054(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[24]_AND_117_o|   0.000|
+                |        20.988(F)|      SLOW  |        10.411(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[25]_AND_115_o|   0.000|
+                |        20.330(F)|      SLOW  |         9.248(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[26]_AND_113_o|   0.000|
+                |        20.625(F)|      SLOW  |         9.505(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[27]_AND_111_o|   0.000|
+                |        21.469(F)|      SLOW  |        10.306(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[28]_AND_109_o|   0.000|
+                |        21.408(F)|      SLOW  |         9.542(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[29]_AND_107_o|   0.000|
+                |        20.232(F)|      SLOW  |         9.626(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[2]_AND_161_o |   0.000|
+                |        21.401(F)|      SLOW  |         9.918(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[30]_AND_105_o|   0.000|
+                |        20.196(F)|      SLOW  |         9.847(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[31]_AND_185_o|   0.000|
+                |        20.355(F)|      SLOW  |         9.199(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[3]_AND_159_o |   0.000|
+                |        20.080(F)|      SLOW  |         9.312(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[4]_AND_157_o |   0.000|
+                |        20.263(F)|      SLOW  |         9.408(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[5]_AND_155_o |   0.000|
+                |        20.519(F)|      SLOW  |         9.443(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[6]_AND_153_o |   0.000|
+                |        20.637(F)|      SLOW  |         9.494(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[7]_AND_151_o |   0.000|
+VGA_G<1>        |        21.218(R)|      SLOW  |         5.436(R)|      FAST  |RESET_N_IBUF_BUFG                     |   0.000|
+                |        20.965(F)|      SLOW  |        10.488(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[0]_AND_165_o |   0.000|
+                |        19.117(F)|      SLOW  |         9.212(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[1]_AND_163_o |   0.000|
+                |        19.003(F)|      SLOW  |         8.931(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[24]_AND_117_o|   0.000|
+                |        20.773(F)|      SLOW  |        10.288(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[25]_AND_115_o|   0.000|
+                |        20.115(F)|      SLOW  |         9.125(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[26]_AND_113_o|   0.000|
+                |        20.410(F)|      SLOW  |         9.382(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[27]_AND_111_o|   0.000|
+                |        21.254(F)|      SLOW  |        10.183(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[28]_AND_109_o|   0.000|
+                |        21.193(F)|      SLOW  |         9.419(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[29]_AND_107_o|   0.000|
+                |        20.208(F)|      SLOW  |         9.625(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[2]_AND_161_o |   0.000|
+                |        21.186(F)|      SLOW  |         9.795(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[30]_AND_105_o|   0.000|
+                |        19.981(F)|      SLOW  |         9.724(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[31]_AND_185_o|   0.000|
+                |        20.331(F)|      SLOW  |         9.198(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[3]_AND_159_o |   0.000|
+                |        20.056(F)|      SLOW  |         9.311(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[4]_AND_157_o |   0.000|
+                |        20.239(F)|      SLOW  |         9.407(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[5]_AND_155_o |   0.000|
+                |        20.495(F)|      SLOW  |         9.442(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[6]_AND_153_o |   0.000|
+                |        20.613(F)|      SLOW  |         9.493(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[7]_AND_151_o |   0.000|
+VGA_R<0>        |        22.468(F)|      SLOW  |        11.251(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[0]_AND_165_o |   0.000|
+                |        20.620(F)|      SLOW  |         9.975(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[1]_AND_163_o |   0.000|
+                |        20.702(F)|      SLOW  |         9.841(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[24]_AND_117_o|   0.000|
+                |        22.472(F)|      SLOW  |        11.198(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[25]_AND_115_o|   0.000|
+                |        21.814(F)|      SLOW  |        10.035(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[26]_AND_113_o|   0.000|
+                |        22.109(F)|      SLOW  |        10.292(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[27]_AND_111_o|   0.000|
+                |        22.953(F)|      SLOW  |        11.093(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[28]_AND_109_o|   0.000|
+                |        22.892(F)|      SLOW  |        10.329(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[29]_AND_107_o|   0.000|
+                |        21.711(F)|      SLOW  |        10.388(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[2]_AND_161_o |   0.000|
+                |        22.885(F)|      SLOW  |        10.705(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[30]_AND_105_o|   0.000|
+                |        21.680(F)|      SLOW  |        10.634(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[31]_AND_185_o|   0.000|
+                |        21.834(F)|      SLOW  |         9.961(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[3]_AND_159_o |   0.000|
+                |        21.559(F)|      SLOW  |        10.074(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[4]_AND_157_o |   0.000|
+                |        21.742(F)|      SLOW  |        10.170(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[5]_AND_155_o |   0.000|
+                |        21.998(F)|      SLOW  |        10.205(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[6]_AND_153_o |   0.000|
+                |        22.116(F)|      SLOW  |        10.256(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[7]_AND_151_o |   0.000|
+                |        22.751(R)|      SLOW  |         6.683(R)|      FAST  |RESET_N_IBUF_BUFG                     |   0.000|
+VGA_R<1>        |        22.201(R)|      SLOW  |         6.391(R)|      FAST  |RESET_N_IBUF_BUFG                     |   0.000|
+                |        21.918(F)|      SLOW  |        10.959(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[0]_AND_165_o |   0.000|
+                |        20.070(F)|      SLOW  |         9.683(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[1]_AND_163_o |   0.000|
+                |        20.152(F)|      SLOW  |         9.549(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[24]_AND_117_o|   0.000|
+                |        21.922(F)|      SLOW  |        10.906(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[25]_AND_115_o|   0.000|
+                |        21.264(F)|      SLOW  |         9.743(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[26]_AND_113_o|   0.000|
+                |        21.559(F)|      SLOW  |        10.000(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[27]_AND_111_o|   0.000|
+                |        22.403(F)|      SLOW  |        10.801(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[28]_AND_109_o|   0.000|
+                |        22.342(F)|      SLOW  |        10.037(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[29]_AND_107_o|   0.000|
+                |        21.161(F)|      SLOW  |        10.096(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[2]_AND_161_o |   0.000|
+                |        22.335(F)|      SLOW  |        10.413(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[30]_AND_105_o|   0.000|
+                |        21.130(F)|      SLOW  |        10.342(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[31]_AND_185_o|   0.000|
+                |        21.284(F)|      SLOW  |         9.669(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[3]_AND_159_o |   0.000|
+                |        21.009(F)|      SLOW  |         9.782(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[4]_AND_157_o |   0.000|
+                |        21.192(F)|      SLOW  |         9.878(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[5]_AND_155_o |   0.000|
+                |        21.448(F)|      SLOW  |         9.913(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[6]_AND_153_o |   0.000|
+                |        21.566(F)|      SLOW  |         9.964(F)|      FAST  |VGA_SQ/RESET_pseudo_rand[7]_AND_151_o |   0.000|
+sevensegments<0>|        12.387(R)|      SLOW  |         5.368(R)|      FAST  |RESET_N_IBUF_BUFG                     |   0.000|
+sevensegments<2>|        12.253(R)|      SLOW  |         5.170(R)|      FAST  |RESET_N_IBUF_BUFG                     |   0.000|
+sevensegments<3>|        12.420(R)|      SLOW  |         5.176(R)|      FAST  |RESET_N_IBUF_BUFG                     |   0.000|
+sevensegments<4>|        12.477(R)|      SLOW  |         5.270(R)|      FAST  |RESET_N_IBUF_BUFG                     |   0.000|
+sevensegments<5>|        11.815(R)|      SLOW  |         5.054(R)|      FAST  |RESET_N_IBUF_BUFG                     |   0.000|
+sevensegments<6>|        13.219(R)|      SLOW  |         5.859(R)|      FAST  |RESET_N_IBUF_BUFG                     |   0.000|
+----------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+
+Clock to Setup on destination clock CLOCK_24
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_24       |    8.069|         |         |         |
+RESET_N        |   11.504|   12.428|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock RESET_N
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_24       |         |         |    0.800|         |
+RESET_N        |    6.021|    6.021|    0.933|    3.713|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sun Jun 02 17:08:29 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4589 MB
+
+
+
